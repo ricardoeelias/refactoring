@@ -1,6 +1,6 @@
 ---
 name: refactorizacion-y-reutilizacion
-description: "Use when reorganizing Python code, refactoring modules, reducing duplication, reusing existing helpers, or preserving behavior and API contracts in this project."
+description: "Utilícelo al reorganizar código Python, refactorizar módulos, reducir la duplicación, reutilizar funciones auxiliares existentes o preservar el comportamiento y los contratos de API en este proyecto."
 ---
 
 # Refactorización y reutilización en Python

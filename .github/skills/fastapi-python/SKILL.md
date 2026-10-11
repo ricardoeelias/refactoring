@@ -1,6 +1,6 @@
 ---
 name: fastapi-python
-description: "Use when implementing, debugging, documenting, or validating FastAPI routes, Pydantic models, request validation, responses, or API integration in this Python project."
+description: "Utilícelo al implementar, depurar, documentar o validar rutas de FastAPI, modelos de Pydantic, validación de solicitudes, respuestas o la integración de API en este proyecto de Python."
 ---
 
 # FastAPI avanzado en Python
