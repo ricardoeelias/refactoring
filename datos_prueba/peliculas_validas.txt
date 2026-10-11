@@ -1,0 +1,71 @@
+DATOS VÁLIDOS PARA CREAR PELÍCULAS
+
+Envía cada objeto JSON por separado como cuerpo de una solicitud POST a
+http://127.0.0.1:8000/movies/. En /docs, abre POST /movies/ y pulsa
+"Try it out". Los ID 4 a 9 no coinciden con las películas iniciales de main.py.
+
+Película 1
+{
+  "id": 4,
+  "title": "El viaje de las estrellas",
+  "overview": "Una tripulación explora mundos desconocidos y enfrenta nuevos desafíos.",
+  "release": "2020-05-12",
+  "rating": 8.1,
+  "category": "Aventura",
+  "earnings": 125000000.0
+}
+
+Película 2
+{
+  "id": 5,
+  "title": "Risas en la ciudad",
+  "overview": "Dos amigos convierten un día cotidiano en una aventura llena de humor.",
+  "release": "2019-08-23",
+  "rating": 7.4,
+  "category": "Comedia",
+  "earnings": 48250000.0
+}
+
+Película 3
+{
+  "id": 6,
+  "title": "El último escenario",
+  "overview": "Una cantante prepara su concierto más importante mientras recuerda su pasado.",
+  "release": "2021-03-05",
+  "rating": 8.7,
+  "category": "Musical",
+  "earnings": 93600000.0
+}
+
+Película 4
+{
+  "id": 7,
+  "title": "Misterio en la montaña",
+  "overview": "Un grupo de viajeros busca respuestas tras hallar una cabaña abandonada.",
+  "release": "2018-11-16",
+  "rating": 7.9,
+  "category": "Terror",
+  "earnings": 67400000.0
+}
+
+Película 5
+{
+  "id": 8,
+  "title": "Cartas para el verano",
+  "overview": "Una caja de cartas antiguas cambia los planes de una joven escritora.",
+  "release": "2022-06-30",
+  "rating": 7.6,
+  "category": "Romance",
+  "earnings": 51800000.0
+}
+
+Película 6
+{
+  "id": 9,
+  "title": "El pequeño inventor",
+  "overview": "Un niño crea una máquina para ayudar a su comunidad a resolver problemas.",
+  "release": "2023-02-14",
+  "rating": 8.3,
+  "category": "Infantil",
+  "earnings": 109250000.0
+}

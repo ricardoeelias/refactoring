@@ -1,0 +1,66 @@
+DATOS INVÁLIDOS PARA PROBAR LA VALIDACIÓN
+
+Envía cada objeto JSON por separado a POST http://127.0.0.1:8000/movies/.
+Cada objeto contiene errores en más de un campo para probar las validaciones
+del modelo Movie, definido en schemas.py. Los problemas se describen bajo
+cada objeto; no son parte del JSON que se debe enviar.
+
+Película inválida 1
+{
+  "id": "uno",
+  "title": "AB",
+  "overview": "Una historia de prueba con una descripción válida.",
+  "release": "2020-05-12",
+  "rating": 7.0,
+  "category": "Aventura",
+  "earnings": 125000000.0
+}
+Errores: id no es un entero; title tiene menos de 3 caracteres.
+
+Película inválida 2
+{
+  "id": 10,
+  "title": "Fecha incorrecta",
+  "overview": "Corta",
+  "release": "31/12/2020",
+  "rating": 6.5,
+  "category": "Drama",
+  "earnings": 14000000.0
+}
+Errores: overview tiene menos de 10 caracteres; release no usa AAAA-MM-DD.
+
+Película inválida 3
+{
+  "id": 11,
+  "title": "Calificación y recaudación inválidas",
+  "overview": "La puntuación y los ingresos están fuera de sus límites.",
+  "release": "2021-04-19",
+  "rating": 11.5,
+  "category": "Ficción",
+  "earnings": -1.0
+}
+Errores: rating supera 10; earnings es menor que 0.
+
+Película inválida 4
+{
+  "id": 12,
+  "title": "Este título de película de prueba supera el máximo de cincuenta caracteres",
+  "overview": "Una película de prueba con un género que no está permitido.",
+  "release": "2022-07-08",
+  "rating": 7.2,
+  "category": "Ciencia ficción",
+  "earnings": 28400000.0
+}
+Errores: title supera 50 caracteres; category no es uno de los géneros permitidos.
+
+Película inválida 5
+{
+  "id": 0,
+  "title": "Descripción demasiado larga",
+  "overview": "Esta descripción de prueba contiene más de ciento cincuenta caracteres para superar el máximo permitido por el modelo y provocar un error de validación al intentar registrar esta película en el catálogo.",
+  "release": "2023-09-21",
+  "rating": 8.0,
+  "category": "Biográfica",
+  "earnings": 39500000.0
+}
+Errores: id no es mayor que 0; overview supera 150 caracteres.
